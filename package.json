@@ -1,0 +1,34 @@
+{
+  "name": "@wuchuheng/setup",
+  "version": "1.0.0",
+  "description": "CLI tool to initialize project with common configuration files",
+  "main": "index.js",
+  "bin": {
+    "@wuchuheng/setup": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "init",
+    "project",
+    "template"
+  ],
+  "author": "wuchuheng",
+  "license": "MIT",
+  "packageManager": "pnpm@10.7.0",
+  "files": [
+    "bin/",
+    "src/",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuchuheng/com.wuchuheng.npm.project-setup.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wuchuheng/com.wuchuheng.npm.project-setup/issues"
+  },
+  "homepage": "https://github.com/wuchuheng/com.wuchuheng.npm.project-setup#readme"
+}
