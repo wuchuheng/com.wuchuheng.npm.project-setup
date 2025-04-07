@@ -1,6 +1,6 @@
 {
   "name": "@wuchuheng/setup",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "CLI tool to initialize project with common configuration files",
   "main": "index.js",
   "bin": {
@@ -21,7 +21,10 @@
   "files": [
     "bin/",
     "src/",
-    "LICENSE"
+    "LICENSE",
+    ".editorconfig",
+    ".gitignore",
+    ".gitattributes"
   ],
   "repository": {
     "type": "git",
