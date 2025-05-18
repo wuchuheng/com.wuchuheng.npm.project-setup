@@ -28,7 +28,7 @@ Thank you for your interest in contributing to this project! This document provi
 
 3. **Publish the package**:
    ```bash
-   npm publish
+   npm publish --access public
    ```
 
 The `.npmrc` file is already configured to use the `NPM_TOKEN` environment variable for authentication.
