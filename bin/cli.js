@@ -14,14 +14,15 @@ const targetDir = process.cwd();
 const sourceDir = path.join(__dirname, '..' );
 const filesToCopy = [
   '.gitattributes',
-  '.editorconfig'
+  '.editorconfig',
+  ".cursor/rules/base.mdc"
 ];
 
 // 2.2 Copy files function
 function copyFiles() {
   filesToCopy.forEach(file => {
-    const sourcePath = path.join(sourceDir, file);
     const destPath = path.join(targetDir, file);
+    const sourcePath = path.join(sourceDir, file);
     
     // 2.2.1 Check if source file exists
     if (fs.existsSync(sourcePath)) {
