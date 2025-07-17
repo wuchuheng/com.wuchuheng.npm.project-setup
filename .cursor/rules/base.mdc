@@ -204,7 +204,7 @@ const formatXAxisTick = (hour: number): string => {
 };
 ```
 
-## For maintate the code readable and easy to understand.
+## For maintain the code readable and easy to understand.
 
 -   To keep the code readable and easy to understand, we should not use the line number over 120 characters.
 -   To refactor the code if it exceeds 120 lines, we should use the following steps:

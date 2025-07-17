@@ -4,7 +4,6 @@
 // 1.1 Import required modules
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
 
 // 1.2 Get the current working directory
 const targetDir = process.cwd();
@@ -15,7 +14,9 @@ const sourceDir = path.join(__dirname, '..' );
 const filesToCopy = [
   '.gitattributes',
   '.editorconfig',
-  ".cursor/rules/base.mdc"
+  ".cursor/rules/base.mdc",
+  '.vscode/extensions.json',
+  ".trae/rules/project_rules.md",
 ];
 
 // 2.2 Copy files function
