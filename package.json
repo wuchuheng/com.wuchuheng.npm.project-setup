@@ -1,6 +1,6 @@
 {
   "name": "@wuchuheng/setup",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "CLI tool to initialize project with common configuration files",
   "main": "index.js",
   "bin": {
