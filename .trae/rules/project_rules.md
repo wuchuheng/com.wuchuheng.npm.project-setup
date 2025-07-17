@@ -9,6 +9,8 @@
 
 ## For Class Definitions
 
+
+
 -   Add a JSDoc comment above the class to describe its purpose and functionality.
 -   Do not add numbered comments for the class itself or its decorators (e.g., @Entity).
 -   Example:
