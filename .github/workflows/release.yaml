@@ -18,7 +18,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '22.14'
           registry-url: 'https://registry.npmjs.org'
           
       - name: Setup pnpm
@@ -28,6 +28,12 @@ jobs:
           
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+
+      - name: Update the version into package.json without prefix 'v'
+        run: |
+          version=$(echo ${{ github.ref }} | sed -n -e 's/refs\/tags\/v\(.*\)/\1/p')
+          echo "version: $version"
+          pnpm version --no-git-tag-version $version
         
       - name: Build (if build script exists)
         run: |
