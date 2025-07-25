@@ -18,9 +18,10 @@
         // Markdow preview
         "shd101wyy.markdown-preview-enhanced",
 
-
-
         // Tailwind CSS
-        "bradlc.vscode-tailwindcss"
+        "bradlc.vscode-tailwindcss", 
+        
+        // wsl
+        "ms-vscode-remote.remote-wsl"
     ]
 }

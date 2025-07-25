@@ -14,9 +14,9 @@ const sourceDir = path.join(__dirname, '..' );
 const filesToCopy = [
   '.gitattributes',
   '.editorconfig',
-  ".cursor/rules/base.mdc",
   '.vscode/extensions.json',
-  ".trae/rules/project_rules.md",
+  '.vscode/settings.json',
+  ".clinerules/base_rules.md"
 ];
 
 // 2.2 Copy files function

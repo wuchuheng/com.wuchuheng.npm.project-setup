@@ -1,19 +1,15 @@
-# Cursor Rules for Code Commenting in TypeScript
-
 ## General Guidelines
 
--   Use JSDoc-style documentation comments (/\*_ ... _/) to describe the purpose, type, or constraints of classes, properties, and methods.
--   Use numbered inline comments (e.g., // 1., // 2.) only inside method bodies to annotate logical steps.
--   Do not use numbered comments for class properties, class definitions, decorators, or above any code blocks.
--   Ensure comments are concise, clear, and relevant to the code they describe.
+- Use JSDoc-style documentation comments (/\*_ ... _/) to describe the purpose, type, or constraints of classes, properties, and methods.
+- Use numbered inline comments (e.g., // 1., // 2.) only inside method bodies to annotate logical steps.
+- Do not use numbered comments for class properties, class definitions, decorators, or above any code blocks.
+- Ensure comments are concise, clear, and relevant to the code they describe.
 
 ## For Class Definitions
 
-
-
--   Add a JSDoc comment above the class to describe its purpose and functionality.
--   Do not add numbered comments for the class itself or its decorators (e.g., @Entity).
--   Example:
+- Add a JSDoc comment above the class to describe its purpose and functionality.
+- Do not add numbered comments for the class itself or its decorators (e.g., @Entity).
+- Example:
 
 ```ts
 /**
@@ -26,10 +22,10 @@ export class Log {}
 
 ## For Class Properties
 
--   Add a JSDoc comment above each property to describe its purpose, type, or constraints.
--   Do not add numbered comments (e.g., // 1., // 2.) for properties or above them.
+- Add a JSDoc comment above each property to describe its purpose, type, or constraints.
+- Do not add numbered comments (e.g., // 1., // 2.) for properties or above them.
 
--   Example:
+- Example:
 
 ```ts
 /**
@@ -65,9 +61,9 @@ createdAt: Date;
 
 ## For Class Methods
 
--   Add a JSDoc comment above each method to describe its purpose, parameters, and return value (if applicable).
--   Inside the method body, use numbered comments (e.g., // 1., // 2.) to annotate logical steps when appropriate.
--   Example:
+- Add a JSDoc comment above each method to describe its purpose, parameters, and return value (if applicable).
+- Inside the method body, use numbered comments (e.g., // 1., // 2.) to annotate logical steps when appropriate.
+- Example:
 
 ```ts
 /**
@@ -95,7 +91,7 @@ set Level(level: 'info' | 'warning' | 'error') {
 
 ## Incorrect Examples (Avoid These)
 
--   Do not add numbered comments above or for properties:
+- Do not add numbered comments above or for properties:
 
 ```ts
 // 1. Primary identification
@@ -122,9 +118,9 @@ level: 'info' | 'warning' | 'error';
 
 ## Additional Notes
 
--   Ensure numbered comments inside methods are used only when they add clarity to the logical flow (e.g., for complex methods with distinct steps).
--   For simple methods or getters/setters with minimal logic, numbered comments may be omitted if they do not add value.
--   When generating code, prioritize consistency in comment style and structure across all classes and files.
+- Ensure numbered comments inside methods are used only when they add clarity to the logical flow (e.g., for complex methods with distinct steps).
+- For simple methods or getters/setters with minimal logic, numbered comments may be omitted if they do not add value.
+- When generating code, prioritize consistency in comment style and structure across all classes and files.
 
 ## We use a three-section numeric comment prefix to clearly separate
 
@@ -153,7 +149,7 @@ Numbering conventions:
 – Subsections: 1.1, 1.2, 2.1, 2.2.1, 3.1, etc.
 – Nested deeper where necessary (e.g. 1.1.1) to keep the flow clear.
 
--   Example:
+- Example:
 
 ```ts
 info(message, source = 'SYSTEM') {
@@ -179,34 +175,34 @@ info(message, source = 'SYSTEM') {
 
 – Nested deeper only if needed (e.g. 1.1.1)
 
--   Incorrect Example:
+- Incorrect Example:
 
 ```ts
 const formatXAxisTick = (hour: number): string => {
-    // 1. Input handling – No validation needed
-    // 2. Core processing – No transformation needed
-    // 3. Output handling
-    // 3.1 Return formatted hour
-    return `${hour}:00`;
-};
+  // 1. Input handling – No validation needed
+  // 2. Core processing – No transformation needed
+  // 3. Output handling
+  // 3.1 Return formatted hour
+  return `${hour}:00`
+}
 ```
 
--   Correct Example:
+- Correct Example:
 
 ```ts
 const formatXAxisTick = (hour: number): string => {
-    // 3. Output handling
-    return `${hour}:00`;
-};
+  // 3. Output handling
+  return `${hour}:00`
+}
 ```
 
 ## For maintain the code readable and easy to understand.
 
--   To keep the code readable and easy to understand, we should not use the line number over 120 characters.
--   To refactor the code if it exceeds 120 lines, we should use the following steps:
-    1. Identify the code that is hard to read.
-    2. Refactor the code to be more readable.
-    3. Keep the code clean and easy to understand.
-    4. Keep the code maintainable and easy to maintain.
-    5. Keep the code easy to understand.
-    6. Keep the code easy to maintain.
+- To keep the code readable and easy to understand, we should not use the line number over 120 characters.
+- To refactor the code if it exceeds 120 lines, we should use the following steps:
+  1. Identify the code that is hard to read.
+  2. Refactor the code to be more readable.
+  3. Keep the code clean and easy to understand.
+  4. Keep the code maintainable and easy to maintain.
+  5. Keep the code easy to understand.
+  6. Keep the code easy to maintain.

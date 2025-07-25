@@ -25,9 +25,8 @@
     ".editorconfig",
     ".gitignore",
     ".gitattributes",
-    ".cursor/",
     ".vscode/",
-    ".trae"
+    ".clinerules/"
   ],
   "repository": {
     "type": "git",
