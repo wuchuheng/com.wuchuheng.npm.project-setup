@@ -9,6 +9,11 @@ const path = require('path');
 const targetDir = process.cwd();
 
 // 2. Logic Handling
+
+
+
+
+
 // 2.1 Define source and destination paths
 const sourceDir = path.join(__dirname, '..' );
 const filesToCopy = [
@@ -16,6 +21,11 @@ const filesToCopy = [
   '.editorconfig',
   '.vscode/extensions.json',
   '.vscode/settings.json',
+
+
+
+
+  '.vscode/mcp.json',
   ".clinerules/base_rules.md"
 ];
 
