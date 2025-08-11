@@ -26,7 +26,8 @@
     ".gitignore",
     ".gitattributes",
     ".vscode/",
-    ".clinerules/"
+    ".clinerules/",
+    ".github/copilot-instructions.md"
   ],
   "repository": {
     "type": "git",

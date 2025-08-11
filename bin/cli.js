@@ -2,39 +2,34 @@
 
 // 1. Input Processing
 // 1.1 Import required modules
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
 // 1.2 Get the current working directory
 const targetDir = process.cwd();
 
 // 2. Logic Handling
 
-
-
-
-
 // 2.1 Define source and destination paths
-const sourceDir = path.join(__dirname, '..' );
+const sourceDir = path.join(__dirname, "..");
 const filesToCopy = [
-  '.gitattributes',
-  '.editorconfig',
-  '.vscode/extensions.json',
-  '.vscode/settings.json',
+  ".gitattributes",
+  ".editorconfig",
+  ".vscode/extensions.json",
+  ".vscode/settings.json",
 
+  ".vscode/mcp.json",
+  ".clinerules/base_rules.md",
 
-
-
-  '.vscode/mcp.json',
-  ".clinerules/base_rules.md"
+  ".github/copilot-instructions.md",
 ];
 
 // 2.2 Copy files function
 function copyFiles() {
-  filesToCopy.forEach(file => {
+  filesToCopy.forEach((file) => {
     const destPath = path.join(targetDir, file);
     const sourcePath = path.join(sourceDir, file);
-    
+
     // 2.2.1 Check if source file exists
     if (fs.existsSync(sourcePath)) {
       // 2.2.2 Create destination directory if it doesn't exist
@@ -42,7 +37,7 @@ function copyFiles() {
       if (!fs.existsSync(destDir)) {
         fs.mkdirSync(destDir, { recursive: true });
       }
-      
+
       // 2.2.3 Copy the file
       fs.copyFileSync(sourcePath, destPath);
       console.log(`✅ Copied ${file} to ${targetDir}`);
@@ -55,10 +50,10 @@ function copyFiles() {
 // 3. Output
 // 3.1 Execute the copy operation
 try {
-  console.log('🚀 Starting project initialization...');
+  console.log("🚀 Starting project initialization...");
   copyFiles();
-  console.log('✨ Project initialization completed successfully!');
+  console.log("✨ Project initialization completed successfully!");
 } catch (error) {
-  console.error('❌ Error during initialization:', error.message);
+  console.error("❌ Error during initialization:", error.message);
   process.exit(1);
-} 
+}
