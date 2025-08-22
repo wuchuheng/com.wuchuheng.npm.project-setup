@@ -16,6 +16,9 @@
         "bradlc.vscode-tailwindcss",
         // wsl
         "ms-vscode-remote.remote-wsl",
-        "Gruntfuggly.todo-tree"
+        // todo plugin.
+        "Gruntfuggly.todo-tree",
+        // Html
+        "formulahendry.auto-rename-tag"
     ]
 }
