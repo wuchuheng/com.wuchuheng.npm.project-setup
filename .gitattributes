@@ -1,14 +1,16 @@
-# Typescript project
-*.{js,jsx,ts,tsx} eol=lf
+# Set default behavior to automatically normalize line endings to LF
+* text=auto eol=lf
 
-# Markdown
-*.md eol=lf
+# Explicitly force LF for specific source code and config files
+*.{kt,kts,java,xml,json,md,js,jsx,ts,tsx,html,css,pro,properties,php} text eol=lf
 
-# HTML
-*.html eol=lf
+# CRITICAL: The Gradle wrapper script MUST have LF line endings
+# Otherwise, it will fail to execute on Unix/Linux/macOS CI/CD servers
+gradlew text eol=lf
 
-# CSS
-*.css eol=lf
-
-# PHP
-*.php eol=lf
+# Denote binary files so Git doesn't try to normalize them
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.jar binary
+*.keystore binary

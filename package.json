@@ -1,13 +1,14 @@
 {
   "name": "@wuchuheng/setup",
-  "version": "1.0.7",
+  "version": "1.0.12",
   "description": "CLI tool to initialize project with common configuration files",
   "main": "index.js",
   "bin": {
-    "@wuchuheng/setup": "./bin/cli.js"
+    "setup": "bin/cli.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "npm publish --access public"
   },
   "keywords": [
     "cli",
